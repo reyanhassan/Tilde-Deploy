@@ -1,0 +1,31 @@
+services:
+  tilde-deploy-frontend:
+    container_name: tilde-deploy-frontend
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      # - ./frontend:/app
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - deploy_net
+
+  tilde-deploy-backend:
+    container_name: tilde-deploy-backend
+    build:
+      context: ./backend/
+      target: final
+    env_file:
+      - ./backend/.env
+    ports:
+      - 8080:8080
+    networks:
+      - deploy_net
+
+networks:
+  deploy_net:
+    external: true

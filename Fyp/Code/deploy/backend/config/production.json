@@ -1,0 +1,5 @@
+{
+  "mongo_uri": "<your MongoDB Atlas URI>",
+  "aws_region": "env",
+  "s3_bucket": "env"
+}
