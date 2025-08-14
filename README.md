@@ -7,10 +7,6 @@
   <img src="https://img.shields.io/badge/Cloud-AWS-yellow?style=for-the-badge&logo=amazonaws" alt="AWS">
 </p>
 
-<p align="center">
-  <img src="E:\tilde_deploy_fyp\Fyp\Logo\WhatsApp Image 2025-07-28 at 20.02.49_8ada87dd.jpg" alt="Tilde Logo" width="300">
-</p>
-
 
 <h1 align="center">🚀 Brokerage Service for Self-Hosted Applications</h1>
 <p align="center">
